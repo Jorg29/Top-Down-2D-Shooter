@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 590e6bab23d0d7243b2bcafaf0febcc9
+guid: 40c34a08da7bd7943bd798ea46fdc4b0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -113,10 +113,10 @@ TextureImporter:
       name: summoner_0
       rect:
         serializedVersion: 2
-        x: 167
-        y: 219
-        width: 599
-        height: 736
+        x: 40
+        y: 29
+        width: 503
+        height: 617
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc83de70ac4d3aa4d8aef346ee744e11
-      internalID: -638432852
+      spriteID: cdb7e8c7c86caca408643291203786b3
+      internalID: 1190657826
       vertices: []
       indices: 
       edges: []
@@ -134,19 +134,19 @@ TextureImporter:
       name: summoner_1
       rect:
         serializedVersion: 2
-        x: 824
-        y: 295
-        width: 130
-        height: 162
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 588
+        y: 361
+        width: 112
+        height: 130
+      alignment: 9
+      pivot: {x: 0.16564396, y: 0.5274346}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9aa4cb1942fc9b24fb9d833e94fe4fe5
-      internalID: 46937619
+      spriteID: e42f254f1c140f8468e5fd164e057e2b
+      internalID: -1981307123
       vertices: []
       indices: 
       edges: []
@@ -155,10 +155,10 @@ TextureImporter:
       name: summoner_2
       rect:
         serializedVersion: 2
-        x: 532
-        y: 97
-        width: 140
-        height: 94
+        x: 590
+        y: 270
+        width: 89
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63fe8f3edffc89d41b51ba1cd9e94009
-      internalID: -551381821
+      spriteID: ec1702b794e00e24788711656105fb41
+      internalID: -473016398
       vertices: []
       indices: 
       edges: []
@@ -176,10 +176,10 @@ TextureImporter:
       name: summoner_3
       rect:
         serializedVersion: 2
-        x: 316
-        y: 84
-        width: 150
-        height: 107
+        x: 572
+        y: 154
+        width: 123
+        height: 85
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6f8ea65415f26b41b0aebb70b81e1ce
-      internalID: -1364487144
+      spriteID: bd443bd7140c3584a95854088dd6f5ea
+      internalID: -886178060
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      summoner_0: -638432852
-      summoner_1: 46937619
-      summoner_2: -551381821
-      summoner_3: -1364487144
+      summoner_0: 1190657826
+      summoner_1: -1981307123
+      summoner_2: -473016398
+      summoner_3: -886178060
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
