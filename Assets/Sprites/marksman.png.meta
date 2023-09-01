@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: marksman_0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 88
+        width: 114
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c46dbc34ff05d43857769b8afa3ef8
+      internalID: 425166872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marksman_1
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 204
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63dfa992ad8135341a98f39c353dbfc8
+      internalID: -1617951262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marksman_2
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 58
+        width: 48
+        height: 89
+      alignment: 9
+      pivot: {x: 0.2751325, y: 0.7639559}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90aa75f0ee6b71d4b8b27d68caf1c1ce
+      internalID: 1419648232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marksman_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 54
+        width: 45
+        height: 90
+      alignment: 9
+      pivot: {x: 0.8677437, y: 0.8456792}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d68849383f2f91489ba2d5f6eb91379
+      internalID: -1466527739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marksman_4
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 10
+        width: 39
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d792c44434e162d4db99bbf9dc1eff52
+      internalID: -1218244882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marksman_5
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 9
+        width: 40
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4afa93090530fb84d89ed113049144bd
+      internalID: 977365669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +245,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      marksman_0: 425166872
+      marksman_1: -1617951262
+      marksman_2: 1419648232
+      marksman_3: -1466527739
+      marksman_4: -1218244882
+      marksman_5: 977365669
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

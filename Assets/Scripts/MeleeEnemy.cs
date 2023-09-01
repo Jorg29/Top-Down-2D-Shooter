@@ -15,11 +15,8 @@ public class MeleeEnemy : Enemy
         // Check if the player is not null (still exists in the game).
         if (player != null)
         {
-            // Calculate the distance between the enemy and the player.
-            float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-
             // If the distance is greater than the stopDistance, move towards the player.
-            if (distanceToPlayer > stopDistance)
+            if (Vector2.Distance(transform.position, player.position) > stopDistance)
             {
                 transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
             }
