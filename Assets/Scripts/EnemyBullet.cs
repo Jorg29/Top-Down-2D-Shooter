@@ -8,9 +8,11 @@ public class EnemyBullet : MonoBehaviour
     private Vector2 targetPosition;
     public float speed;
     public int damage;
+    public float lifeTime;
     // Start is called before the first frame update
     void Start()
     {
+        Invoke("DestroyProjectile", lifeTime);
         playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         targetPosition = playerScript.transform.position;
     }
