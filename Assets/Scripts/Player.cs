@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class Player : MonoBehaviour
     private Animator anim;          // Reference to the player's Animator component.
     private Vector2 moveAmount;     // The calculated movement amount based on input.
     public float health;            // The player's health.
+    public Image[] hearts;
+    public Sprite fullHeart;
+    public Sprite emptyHeart;
 
     void Start()
     {
@@ -46,12 +50,41 @@ public class Player : MonoBehaviour
     public void TakeDamage(int damageAmount)
     {
         health -= damageAmount;
-
+        UpdateHealthUI(health);
         // Check if the player's health is zero or below.
         if (health <= 0)
         {
             // Destroy the player GameObject.
             Destroy(gameObject);
         }
+    }
+    public void ChangeWeapon(Weapon weaponToEquip) 
+    {
+        Destroy(GameObject.FindGameObjectWithTag("Weapon"));
+        Instantiate(weaponToEquip, transform.position, transform.rotation, transform);
+    }
+
+    void UpdateHealthUI(float currentHealth) 
+    {
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            if (i < currentHealth)
+            {
+                hearts[i].sprite = fullHeart;
+            } else {
+                hearts[i].sprite = emptyHeart;
+            }
+        }
+    }
+
+    public void Heal(int healAmount) 
+    {
+        if (health + healAmount > 5)
+        {
+            health = 5;
+        } else {
+            health += healAmount;
+        }
+        UpdateHealthUI(health);
     }
 }

@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 2904650625594676829}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.8817, y: -3.09724, z: -0.12867321}
+  m_LocalPosition: {x: -2.72, y: 3.07, z: -0.12867321}
   m_LocalScale: {x: 3.3333333, y: 3.3333333, z: 3.3333333}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 6117208330511888691}
   m_Layer: 0
   m_Name: weapon2
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -6,10 +6,15 @@ public class Enemy : MonoBehaviour
 {
     // Public variables that can be adjusted in the Unity Inspector
     public int health;
-    [HideInInspector] public Transform player;
+    [HideInInspector] 
+    public Transform player;
     public float speed;
     public float timeBetweenAttacks;
     public int damage;
+    public int pickupChance;
+    public GameObject[] pickups;
+    public int healthPickupChance;
+    public GameObject healthPickup;
 
     // Start method is called when the enemy object is instantiated
     public virtual void Start()
@@ -26,8 +31,19 @@ public class Enemy : MonoBehaviour
         // Check if the enemy's health has dropped to or below zero
         if (health <= 0)
         {
-            // Destroy the enemy GameObject if its health is zero or negative
-            Destroy(gameObject);
+            int randomNumber = Random.Range(0, 101);
+            if (randomNumber < pickupChance)
+            {
+                GameObject randomPickup = pickups[Random.Range(0, pickups.Length)];
+                Instantiate(randomPickup, transform.position, transform.rotation);
+            }
+            int randHealth = Random.Range(0, 101);
+            if (randHealth < healthPickupChance)
+            {
+                Instantiate(healthPickup, transform.position, transform.rotation);
+            }
+        
+           Destroy(gameObject);
         }
     }
 }

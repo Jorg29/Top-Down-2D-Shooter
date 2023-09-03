@@ -593,7 +593,14 @@ MonoBehaviour:
   speed: 6
   timeBetweenAttacks: 3
   damage: 1
-  stopDistance: 8
+  pickupChance: 10
+  pickups:
+  - {fileID: 6800771283899494160, guid: bcfb895f247b98249b5ba7f7b38ee4ab, type: 3}
+  - {fileID: 5087531869796656280, guid: b176dedfe5926384e8d06f3a3879ed80, type: 3}
+  - {fileID: 1272066021108231424, guid: 80089a6596ff33142b04f66844a60983, type: 3}
+  healthPickupChance: 10
+  healthPickup: {fileID: 759449313032852263, guid: 45b826dee7d6fb44ebf34f8daf12d3db, type: 3}
+  stopDistance: 7
   shotPoint: {fileID: 6457399594897506287}
   enemyBullet: {fileID: 648321532167366958, guid: e08ae6a8624c4a84891df9d735d3e652, type: 3}
 --- !u!1 &8641978662857915986

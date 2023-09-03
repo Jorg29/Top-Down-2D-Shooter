@@ -2,13 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class weaponscript : MonoBehaviour
+public class Weapon : MonoBehaviour
 {
     public GameObject projectile;       // The projectile prefab to be shot
     public Transform shotPoint;         // The point from which projectiles will be shot
     public float timeBetweenShots;      // The delay between shots
     private float shotTime;             // The time when the next shot can occur
 
+    private void Start()
+    {
+    // Define how much you want to move the weapon to the left
+        Vector3 leftOffset = new Vector3(0.403f, -0.12f, 0.0f); // Adjust the values as needed
+
+    // Apply the offset to the weapon's initial position
+        transform.position += leftOffset;
+    }
     private void Update()
     {
         // Calculate the direction from the weapon to the mouse cursor
