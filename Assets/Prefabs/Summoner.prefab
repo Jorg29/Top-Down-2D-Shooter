@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.43, y: -3.96, z: -0.020385748}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 369399041898377134}
@@ -146,20 +146,20 @@ MonoBehaviour:
   health: 2
   player: {fileID: 0}
   speed: 5
-  timeBetweenAttacks: 5
+  timeBetweenAttacks: 4
   damage: 1
-  pickupChance: 40
+  pickupChance: 30
   pickups:
   - {fileID: 6800771283899494160, guid: bcfb895f247b98249b5ba7f7b38ee4ab, type: 3}
   - {fileID: 5087531869796656280, guid: b176dedfe5926384e8d06f3a3879ed80, type: 3}
   - {fileID: 1272066021108231424, guid: 80089a6596ff33142b04f66844a60983, type: 3}
-  - {fileID: 759449313032852263, guid: 45b826dee7d6fb44ebf34f8daf12d3db, type: 3}
   healthPickupChance: 35
   healthPickup: {fileID: 759449313032852263, guid: 45b826dee7d6fb44ebf34f8daf12d3db, type: 3}
-  minX: -19.82
-  maxX: 19.78
-  minY: -8.89
-  maxY: 7.6
+  deathEffect: {fileID: 647554793010133156, guid: 1b64c5c829aff0a49bf8966fa4193afb, type: 3}
+  minX: -20
+  maxX: 20
+  minY: -9
+  maxY: 9
   stopDistance: 6
   attackSpeed: 0.5
   enemyToSummon: {fileID: 3878037978242554789, guid: 7ab9c846c6b4ab34d8f8087ffe15dc39, type: 3}

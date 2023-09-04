@@ -8,9 +8,11 @@ public class Weapon : MonoBehaviour
     public Transform shotPoint;         // The point from which projectiles will be shot
     public float timeBetweenShots;      // The delay between shots
     private float shotTime;             // The time when the next shot can occur
+    private Animator camerAnim;
 
     private void Start()
     {
+        camerAnim = Camera.main.GetComponent<Animator>();
     // Define how much you want to move the weapon to the left
         Vector3 leftOffset = new Vector3(0.403f, -0.12f, 0.0f); // Adjust the values as needed
 
@@ -39,7 +41,7 @@ public class Weapon : MonoBehaviour
             {
                 // Create a projectile at the shot point with the calculated rotation
                 Instantiate(projectile, shotPoint.position, transform.rotation);
-
+                camerAnim.SetTrigger("shake");
                 // Set the time when the next shot can occur
                 shotTime = Time.time + timeBetweenShots;
             }

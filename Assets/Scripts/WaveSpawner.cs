@@ -19,6 +19,8 @@ public class WaveSpawner : MonoBehaviour
     private int currentWaveIndex;
     private Transform player;
     private bool finishedSpawning;
+    public GameObject boss;
+    public Transform bossSpawnPoint;
 
     private void Start()
     {
@@ -58,21 +60,20 @@ public class WaveSpawner : MonoBehaviour
 
     private void Update()
     {
-      
-            if (finishedSpawning == true && GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
+        if (finishedSpawning == true && GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
+        {
+            finishedSpawning = false;
+            if (currentWaveIndex + 1 < waves.Length)
             {
-                finishedSpawning = false;
-                if (currentWaveIndex + 1 < waves.Length)
-                {
-                    currentWaveIndex++;
-                    StartCoroutine(StartNextWave(currentWaveIndex));
-                }
-                else
-                {
-                    Debug.Log("Game Finished");
-                }
-
+                currentWaveIndex++;
+                StartCoroutine(StartNextWave(currentWaveIndex));
             }
+            else
+            {
+                Instantiate(boss, bossSpawnPoint.position, bossSpawnPoint.rotation);
+            }
+
+        }
 
 
     }

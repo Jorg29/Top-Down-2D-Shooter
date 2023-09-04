@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     public GameObject[] pickups;
     public int healthPickupChance;
     public GameObject healthPickup;
-
+    public GameObject deathEffect;
     // Start method is called when the enemy object is instantiated
     public virtual void Start()
     {
@@ -42,8 +42,8 @@ public class Enemy : MonoBehaviour
             {
                 Instantiate(healthPickup, transform.position, transform.rotation);
             }
-        
-           Destroy(gameObject);
+            Instantiate(deathEffect, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
     }
 }

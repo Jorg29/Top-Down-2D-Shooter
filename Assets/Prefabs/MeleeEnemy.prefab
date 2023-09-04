@@ -368,7 +368,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.7799997, y: -0.21000004, z: -0.06410456}
-  m_LocalScale: {x: 0.4, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.5, y: 0.6, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7513383446401630764}
@@ -486,13 +486,14 @@ MonoBehaviour:
   speed: 7
   timeBetweenAttacks: 2
   damage: 1
-  pickupChance: 10
+  pickupChance: 20
   pickups:
   - {fileID: 6800771283899494160, guid: bcfb895f247b98249b5ba7f7b38ee4ab, type: 3}
   - {fileID: 5087531869796656280, guid: b176dedfe5926384e8d06f3a3879ed80, type: 3}
   - {fileID: 1272066021108231424, guid: 80089a6596ff33142b04f66844a60983, type: 3}
   healthPickupChance: 20
   healthPickup: {fileID: 759449313032852263, guid: 45b826dee7d6fb44ebf34f8daf12d3db, type: 3}
+  deathEffect: {fileID: 647554793010133156, guid: 1b64c5c829aff0a49bf8966fa4193afb, type: 3}
   stopDistance: 2
   attackSpeed: 10
 --- !u!1 &8332077489479813177
