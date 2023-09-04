@@ -8,11 +8,13 @@ public class Projectile : MonoBehaviour
     public float lifeTime;       // The lifespan of the projectile
     public GameObject explosion; // The explosion prefab
     public int damage;           // The damage the projectile deals
+    public GameObject soundOdject;
 
     private void Start()
     {
         // Invoke the DestroyProjectile method after the specified lifetime
         Invoke("DestroyProjectile", lifeTime);
+        Instantiate(soundOdject, transform.position, transform.rotation);
     }
 
     private void Update()
