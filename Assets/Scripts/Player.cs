@@ -14,7 +14,6 @@ public class Player : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
     public Animator hurtAnim;
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();   // Get the Rigidbody2D component.

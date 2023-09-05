@@ -12,19 +12,27 @@ public class Boss : MonoBehaviour {
     private int halfHealth;
     private Animator anim;
     public int damage;
+    private Slider healthBar;
+    public GameObject deathEffect;
 
     private void Start()
     {
         halfHealth = health / 2;
         anim = GetComponent<Animator>();
+        healthBar = FindObjectOfType<Slider>();
+        healthBar.maxValue = health;
+        healthBar.value = health;
     }
 
     public void TakeDamage(int amount)
     {
         health -= amount;
+        healthBar.value = health;  
         if (health <= 0)
         {
+            Instantiate(deathEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
+            healthBar.gameObject.SetActive(false);
         }
 
         if (health <= halfHealth)
