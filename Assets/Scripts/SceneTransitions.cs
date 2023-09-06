@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneTransition : MonoBehaviour {
+public class SceneTransitions : MonoBehaviour {
 
     private Animator transitionAnim;
 

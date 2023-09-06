@@ -91,7 +91,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.015678585, y: 0.6480463}
+  m_Offset: {x: 0.055452526, y: 0.25030726}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -102,7 +102,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9511648, y: 2.6096635}
+  m_Size: {x: 1.3509403, y: 1.8141853}
   m_EdgeRadius: 0
 --- !u!50 &2113187563890503518
 Rigidbody2D:
@@ -151,9 +151,8 @@ MonoBehaviour:
   pickupChance: 30
   pickups:
   - {fileID: 6800771283899494160, guid: bcfb895f247b98249b5ba7f7b38ee4ab, type: 3}
-  - {fileID: 5087531869796656280, guid: b176dedfe5926384e8d06f3a3879ed80, type: 3}
   - {fileID: 1272066021108231424, guid: 80089a6596ff33142b04f66844a60983, type: 3}
-  healthPickupChance: 35
+  healthPickupChance: 20
   healthPickup: {fileID: 759449313032852263, guid: 45b826dee7d6fb44ebf34f8daf12d3db, type: 3}
   deathEffect: {fileID: 647554793010133156, guid: 1b64c5c829aff0a49bf8966fa4193afb, type: 3}
   minX: -20

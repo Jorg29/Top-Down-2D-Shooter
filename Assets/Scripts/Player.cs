@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class Player : MonoBehaviour
 {
     public float speed;             // The movement speed of the player.
@@ -14,10 +13,12 @@ public class Player : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
     public Animator hurtAnim;
+    private SceneTransitions sceneTransitions;    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();   // Get the Rigidbody2D component.
         anim = GetComponent<Animator>();    // Get the Animator component.
+        sceneTransitions = FindObjectOfType<SceneTransitions>();
     }
 
     // Update is called once per frame
@@ -57,6 +58,7 @@ public class Player : MonoBehaviour
         {
             // Destroy the player GameObject.
             Destroy(gameObject);
+            sceneTransitions.LoadScene("Lose");
         }
     }
     public void ChangeWeapon(Weapon weaponToEquip) 

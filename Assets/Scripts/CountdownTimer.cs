@@ -16,7 +16,7 @@ public class CountdownTimer : MonoBehaviour {
 
     IEnumerator Transition(string sceneName) 
     {
-        yield return new WaitForSeconds(5); // Wait for 5 seconds
+        yield return new WaitForSeconds(3); // Wait for 3 seconds
         transitionAnim.SetTrigger("end");
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(sceneName);
