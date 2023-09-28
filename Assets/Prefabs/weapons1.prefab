@@ -146,6 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponToEquip: {fileID: 3775262821631584341, guid: 95c3b5f2db48541429d864f4996a93c7, type: 3}
   effect: {fileID: 1197135177186070, guid: 58f5ac1b898c1df4f912279acb1c0604, type: 3}
+  destroyDelay: 15
 --- !u!82 &837753185785435846
 AudioSource:
   m_ObjectHideFlags: 0
@@ -155,7 +156,7 @@ AudioSource:
   m_GameObject: {fileID: 6800771283899494160}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -3975013141844077468, guid: 363a99d27fbd43e46824bab08ee86562, type: 2}
   m_audioClip: {fileID: 8300000, guid: 52e010d1b2681c24f8b387e2a537092a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
