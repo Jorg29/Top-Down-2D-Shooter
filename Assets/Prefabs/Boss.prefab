@@ -500,8 +500,9 @@ MonoBehaviour:
   enemies:
   - {fileID: 4717919572155000909, guid: 8e3d4e25886b1c14b8e946a3e09b037e, type: 3}
   - {fileID: 5707713327748607361, guid: cb0ee34d08c7ce6409bbe6a248540e6d, type: 3}
-  spawnOffset: 1
-  damage: 1
+  - {fileID: 6189118001263602926, guid: 32e4d9cf8906dcd468dbcf83604cee09, type: 3}
+  spawnOffset: 3
+  damage: 2
   deathEffect: {fileID: 647554793010133156, guid: 1b64c5c829aff0a49bf8966fa4193afb, type: 3}
 --- !u!61 &4781534090686005534
 BoxCollider2D:

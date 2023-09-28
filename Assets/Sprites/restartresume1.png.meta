@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 61f595702d952fd43bfd5a6e58b1ba02
+guid: 1006a0bfc225dbb46af3e8dce50faf71
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,18 +108,62 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: restartresume1_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 323
+        width: 622
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d1cbde45561714eab3676ce44e128f
+      internalID: -1807032787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: restartresume1_1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 96
+        width: 616
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649a3296b0cf2bf4397269e31b9672b3
+      internalID: 1571400731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      restartresume1_0: -1807032787
+      restartresume1_1: 1571400731
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
